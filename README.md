@@ -1,0 +1,2 @@
+# stynshrm.github.io
+blog
