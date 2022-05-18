@@ -1,2 +1,2 @@
 # stynshrm.github.io
-Personal blog
+My Personal blog 
