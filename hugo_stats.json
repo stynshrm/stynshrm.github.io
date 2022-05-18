@@ -227,13 +227,19 @@
       "list-types",
       "mane-refeci-capiebant-unda-mulcebat",
       "nested-list",
+      "one-sample-t-test",
+      "one-sample-z-test",
       "ordered-list",
       "other-elements--abbr-sub-sup-kbd-mark",
       "paragraph",
       "tables",
+      "two-sample-t-test",
+      "two-sample-z-test",
       "unordered-list",
       "vagus-elidunt",
       "vimeo-simple-shortcode",
+      "what-is-the-t-test",
+      "what-is-the-z-test",
       "youtube-privacy-enhanced-shortcode"
     ]
   }
