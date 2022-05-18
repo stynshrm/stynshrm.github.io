@@ -1,4 +1,4 @@
-baseurl = "https://blist.vercel.app"
+baseurl = "https://satyansharma.netlify.app"
 metaDataFormat = "yaml"
 title = "Blist Multilingual Theme"
 theme = "blist"
