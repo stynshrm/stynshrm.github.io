@@ -7,6 +7,9 @@ math: true
 thumbnail: https://picsum.photos/id/1015/400/250
 ---
 
+Testing math.
+
+
 Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.
 
 <!--more-->
