@@ -205,6 +205,8 @@
     ],
     "ids": [
       "a",
+      "bayes-theorem",
+      "bayesian-inference",
       "blockquote-with-attribution",
       "blockquote-without-attribution",
       "blockquotes",
@@ -227,11 +229,13 @@
       "list-types",
       "mane-refeci-capiebant-unda-mulcebat",
       "nested-list",
+      "nonparmetric-methods",
       "one-sample-t-test",
       "one-sample-z-test",
       "ordered-list",
       "other-elements--abbr-sub-sup-kbd-mark",
       "paragraph",
+      "parametric-methods",
       "tables",
       "two-sample-t-test",
       "two-sample-z-test",
@@ -240,6 +244,7 @@
       "vimeo-simple-shortcode",
       "what-is-the-t-test",
       "what-is-the-z-test",
+      "you-already-are-bayesian-in-everyday-reasoning",
       "youtube-privacy-enhanced-shortcode"
     ]
   }
