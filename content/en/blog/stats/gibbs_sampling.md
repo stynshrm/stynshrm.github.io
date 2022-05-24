@@ -29,6 +29,7 @@ $$f(x_1 | x_2) = N(\mu_1 + (\sigma_{1,2}/\sigma_{2}^2)(x_2 - \mu_2), \sigma_{1}^
 and, 
 $$f(x_2 | x_1) = N(\mu_2 + (\sigma_{1,2}/\sigma_{1}^2)(x_1 - \mu_1), \sigma_{2}^2 -(\sigma_{1,2} / \sigma_{1})^{2} )$$ 
 
+## Python Implementation 
 Following is python implementation of Gibbs Sampling in case of 2D Gaussian distribution
 
 ```python
