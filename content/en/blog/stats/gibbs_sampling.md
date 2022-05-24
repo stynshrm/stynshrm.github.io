@@ -14,20 +14,20 @@ Gibbs Sampler can draw samples from any distribution, The Gibbs sampler draws it
 Starting values are needed to initiate the Gibbs sampling process.The sampling  depends on the values in the previous iteration; however, the sampling procedure is known to converge on to the final distribution, desired posterior,  and that the process does on depend on the initial starting values.
 
 ## Example: Bivariate Normal Distribution
-With $\textbf{x} = (x1, x2)$, $\mu = (\mu_1, \mu_2)$ and $\Sigma$ being a $2 × 2$ covariance
-matrix with diagonal entries $\sigma_{1,1}$, $\sigma_{2,2}$ and off-diagonals $\sigma_{1,2}$.
+With $\textbf{x} = (x_1, x_2)$, $\mu = (\mu_1, \mu_2)$ and $\Sigma$ being a $2 × 2$ covariance
+matrix with diagonal entries $\sigma_{1}^2$, $\sigma_{2}^2$ and off-diagonals $\sigma_{1,2}$.
 - The pdf is
 
 $$f(\textbf{x} | \mu,\Sigma) \propto \left| \Sigma \right|^{-1/2}exp\left( -\frac{1}{2}(\textbf{x} - \mu)^{t} \Sigma^{-1}(\textbf{x}-\mu) \right)$$
 
-- The Marginal distributions are given by $\text{x}_1 \sim N(\mu_1, \sigma_{1,1})$ and  $\text{x}_2 \sim N(\mu_2, \sigma_{2,2})$
+- The Marginal distributions are given by $x_1 \sim N(\mu_1, \sigma_{1}^2)$ and  $x_2 \sim N(\mu_2, \sigma_{2}^2)$
 
 
 - The conditionals, for Gibbs sampling, are given by:
 
-$$f(\text{x}_1| \text{x}_2) = N(\mu_1 + (\sigma_{1,2}/\sigma_{2,2})(\text{x}_2 - \mu_2), \sigma_{1,1} -(\sigma_{1,2}^{2} / \sigma_{2,2}))$$ 
+$$f(x_1 | x_2) = N(\mu_1 + (\sigma_{1,2}/\sigma_{2}^2)(x_2 - \mu_2), \sigma_{1}^2 -(\sigma_{1,2}/ \sigma_{2})^{2} )$$ 
 and, 
-$$f(\text{x}_2| \text{x}_1) = N(\mu_2 + (\sigma_{1,2}/\sigma_{1,1})(\text{x}_1 - \mu_1), \sigma_{2,2} -(\sigma_{1,2}^{2} / \sigma_{1,1}))$$ 
+$$f(x_2 | x_1) = N(\mu_2 + (\sigma_{1,2}/\sigma_{1}^2)(x_1 - \mu_1), \sigma_{2}^2 -(\sigma_{1,2} / \sigma_{1})^{2} )$$ 
 
 Following is python implementation of Gibbs Sampling in case of 2D Gaussian distribution
 
@@ -72,4 +72,4 @@ The figure on left shows the path taken by the generated samples, the next point
 ![alt text](/gibbs.png)
 
 ### References:
-- https://www2.stat.duke.edu/~rcs46/modern_bayes17/lecturesModernBayes17/
+- https://www.stat.unm.edu/~ghuerta/stat574/notes-gibbs-metro.pdf
