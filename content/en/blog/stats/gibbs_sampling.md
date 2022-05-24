@@ -9,10 +9,9 @@ tags: ["Statistcs", "Data Science"]
 ## Gibbs Sampling
 Gibbs sampling is a Markov Chain Monte Carlo algorithm and a special case of the Metropolis-Hastings algorithm. 
 
+Gibbs Sampler can draw samples from any distribution, The Gibbs sampler draws iteratively from posterior conditional distributions rather than drawing directly from the joint posterior distribution. So it is useful in cases where joint distributions may be complex but one may be able to sample directly from less complicated conditional distributions. 
 
 Starting values are needed to initiate the Gibbs sampling process.The sampling  depends on the values in the previous iteration; however, the sampling procedure is known to converge on to the final distribution, desired posterior,  and that the process does on depend on the initial starting values.
-
-Gibbs Sampler can draw samples from any distribution, The Gibbs sampler draws iteratively from posterior conditional distributions rather than drawing directly from the joint posterior distribution. So it is useful in cases where joint distributions may be complex but one may be able to sample directly from less complicated conditional distributions. 
 
 ## Example: Bivariate Normal Distribution
 With $\textbf{x} = (x1, x2)$, $\mu = (\mu_1, \mu_2)$ and $\Sigma$ being a $2 × 2$ covariance
