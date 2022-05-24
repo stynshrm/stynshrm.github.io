@@ -16,6 +16,7 @@ https://e2eml.school/how_bayesian_inference_works.html -long hair
 https://cran.r-project.org/web/packages/LaplacesDemon/vignettes/BayesianInference.pdf
 https://www.probabilitycourse.com/chapter9/9_1_4_conditional_expectation_MMSE.php
 https://www.probabilitycourse.com/chapter9/9_1_0_bayesian_inference.php
+https://statsthinking21.github.io/statsthinking21-python/10-BayesianStatistics.html coved ex,
 --->
 ## You already are Bayesian in everyday reasoning
 

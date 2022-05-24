@@ -14,8 +14,8 @@ Mean is a function of the sample data. Sample mean:
 
 
 **Expected Value**
-The mean, expected value, or expectation, $\mathbb{E}(X)$ of a random variable $$X$$ is the long-term average of the random variable.
-That is, the mean of the $$N$$ values will be approximately equal to $\mathbb{E}(X)$ for large $N$.
+The mean, expected value, or expectation, $\mathbb{E}(X)$ of a random variable $X$ is the long-term average of the random variable.
+That is, the mean of the $N$ values will be approximately equal to $\mathbb{E}(X)$ for large $N$.
 
 
 In a probability distribution , the weighted average of possible values $x_i$ of a random variable, with weights given by their respective theoretical probabilities $P(x_i)$, is known as the expected value.
