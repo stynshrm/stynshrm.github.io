@@ -138,19 +138,19 @@ pi = np.ones(number_of_sources)/number_of_sources
 
 - #### Step 2 - The E-step
 ```python
-r_ic = np.zeros((n_samples, number_of_sources))
+r_ik = np.zeros((n_samples, number_of_sources))
 
 numerator = np.zeros( (n_samples, number_of_sources) )
 
 for i in range(number_of_sources):
-    r_ic[:,i] = multivariate_normal(mean=mu[i], cov=cov[i]).pdf(X)
+    r_ik[:,i] = multivariate_normal(mean=mu[i], cov=cov[i]).pdf(X)
 
-denominator = r_ic.sum(axis=1)[:, np.newaxis]
-r_ic = r_ic/denominator
+denominator = r_ik.sum(axis=1)[:, np.newaxis]
+r_ik = r_ik/denominator
 ```
-At start `r_ic` was initialized with zeroes, and now is updated to :
+At start `r_ik` was initialized with zeros. It indicates the probaility of each point being in the $k$th cluster and now is updated to :
 ```
-r_ic -> array([[0.06244909, 0.1723533 , 0.76519761],
+r_ik -> array([[0.06244909, 0.1723533 , 0.76519761],
            [0.29184368, 0.47038617, 0.23777014],
            [0.47965241, 0.37006151, 0.15028608],
            [0.21491568, 0.43439897, 0.35068535],
@@ -165,9 +165,9 @@ r_ic -> array([[0.06244909, 0.1723533 , 0.76519761],
 - #### Step 3 - The M-step
 ```python
 for i in range(number_of_sources):
-    n_k = np.sum(r_ic[:,i],axis=0)
-    mu[i] = (X * r_ic[:,[i]]).sum(axis=0) / n_k
-    cov[i] = np.cov(X.T, aweights=(r_ic[:,[i]]/n_k).flatten(), bias=True)
+    n_k = np.sum(r_ik[:,i],axis=0)
+    mu[i] = (X * r_ik[:,[i]]).sum(axis=0) / n_k
+    cov[i] = np.cov(X.T, aweights=(r_ik[:,[i]]/n_k).flatten(), bias=True)
 ```
 Lets check  `cov` before Step 3.
 ```
