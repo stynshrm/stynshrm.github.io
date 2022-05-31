@@ -9,7 +9,7 @@ tags: ["Python"]
 ## Abseil Python Library
 
 While working on one of python projects, I encountered abseil python library. I found 
-out `absl.flags` quiet interesting. It provides easy way fro argument processing 
+out `absl.flags` quiet interesting. It provides easy way for argument processing 
 and replaces `getopt()` and `optparse`. One is able to provide default values and also
 auto-generate help documents. 
 
@@ -51,6 +51,8 @@ if __name__ == '__main__':
 Runing without arguments:
 
 ```
+python test.py
+
 FATAL Flags parsing error:
   flag --output_dir=None: Flag --output_dir must have a value other than None.
   flag --data_dir=None: Flag --data_dir must have a value other than None.
@@ -60,7 +62,8 @@ Pass --helpshort or --helpfull to see help on flags.
 And with the required arguments
 
 ```
-python zz.py --output_dir="/home/user/out_dir" --data_dir="/home/user/data_dir/"
+python test.py --output_dir="/home/user/out_dir" --data_dir="/home/user/data_dir/"
+
 You are runing a production job with 32 nodes
 /home/user/data_dir/
 /home/user/out_dir
