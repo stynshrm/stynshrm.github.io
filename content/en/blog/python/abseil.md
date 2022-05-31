@@ -59,6 +59,19 @@ FATAL Flags parsing error:
 Pass --helpshort or --helpfull to see help on flags.
 ```
 
+To see help documentation
+```
+python test.py --help
+
+  --data_dir: Path to data directory.
+  --job_id: Job ID.
+    (default: '32')
+    (a non-negative integer)
+  --job_name: <production|test>: Choose  job configuration - smaller test job database (test) or full production run (production)
+    (default: 'production')
+  --output_dir: Path to a directory that will store the results.
+```
+
 And with the required arguments
 
 ```
