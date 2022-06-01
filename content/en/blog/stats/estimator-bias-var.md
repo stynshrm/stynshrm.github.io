@@ -34,7 +34,7 @@ $$\mathbb{E}(X) = \int_{\infty }^{-\infty } xf(x)dx $$
 An estimator is a statistic (i.e., a function of the data), a rule for calculating the estimates about the population. If parameter is $\theta$, then estimator is $\hat{\theta}(X)$.
 
 Estimator refers to a statistic if that statistic is used to estimate some parameter-of-interest.
-Let $X$ is a random variable from a population with distribution $P_\theta$, $\theta \in \Theta$. An example of parametric distribution function is the Normal distribution where the parameter vector $\theta = [\mu, \sigma]$ is unknown. The goal of the estimation procedure is to find a value $\hat{\theta}$ of the parameter $\theta$ so that the parameterized distribution $P_\hat{\theta}$ closely matches the distribution of data.
+Let $X$ is a random variable from a population with distribution $P_\theta$, $\theta \in \Theta$. An example of parametric distribution function is the Normal distribution where the parameter vector $\theta = [\mu, \sigma]$ is unknown. The goal of the estimation procedure is to find a value $\hat{\theta}$ of the parameter $\theta$ so that the parameterized distribution $P_{\hat{\theta}}$ closely matches the distribution of data.
 
 
 Estimate is a number that is the computed value of the estimator. 
