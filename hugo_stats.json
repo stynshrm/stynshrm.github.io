@@ -28,6 +28,7 @@
       "link",
       "main",
       "meta",
+      "ol",
       "p",
       "path",
       "polyline",
@@ -182,6 +183,7 @@
       "case-1---known-source-unknown-paramters",
       "case-2---unknown-source-known-parameters",
       "case-3---unknown-source-unknown-parameters",
+      "cover-and-its-nerve",
       "cross-entropy",
       "damped-harmonic-oscillator",
       "example-bivariate-normal-distribution",
@@ -189,6 +191,8 @@
       "expectation-maximization-em",
       "fitting-gaussian-mixture",
       "forward-kl",
+      "fuzzy-simplicial-set",
+      "fuzzy-topology",
       "gaussian-mixtures",
       "gibbs-sampling",
       "gmm-with-expectation-maximization",
@@ -211,6 +215,7 @@
       "reference--further-reading",
       "references",
       "reverse-kl",
+      "simplex-and-simplical-complexes",
       "step-1---initialization",
       "step-2---the-e-step",
       "step-3---the-m-step",
@@ -220,9 +225,12 @@
       "step-two-the-e-step",
       "two-sample-t-test",
       "two-sample-z-test",
+      "uber-metric-space",
+      "umap",
       "what-is-the-t-test",
       "what-is-the-z-test",
-      "you-already-are-bayesian-in-everyday-reasoning"
+      "you-already-are-bayesian-in-everyday-reasoning",
+      "čech-complex-and-the-vietoris-rips-complex---simplical-complexes-from-data"
     ]
   }
 }
