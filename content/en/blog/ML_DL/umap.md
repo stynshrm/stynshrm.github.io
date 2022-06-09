@@ -57,7 +57,7 @@ The Vietoris-Rips complex relaxes the Čech condition for simplex inclusion by a
 
 ## Fuzzy topology
 ### Uber metric space
-An extended pseudo-metric space (**EPMet**,or an **extended pseudo-metric space**) is a pair $(X, d)$, where $X$ is a set and $d : X \times X \to [0,\infty]$, such that for all $x,y,z \in X$,
+An extended pseudo-metric space (or an **extended pseudo-metric space**, **EPMet**,) is a pair $(X, d)$, where $X$ is a set and $d : X \times X \to [0,\infty]$, such that for all $x,y,z \in X$,
 
 $$
 a) $d(x, x) = 0$, 
@@ -67,8 +67,8 @@ b) $d(x, y) = d(y, x)$,
 c) $d(x, z) \le d(x, y) + d(y, z)$.
 $$
 
-A metric space is an **EPMet** space for which $d(x, y) = 0$ implies $x = y$,
-and all distances $d(x, y)$ are finite.  It lets distances be infinite ("*pseudo*"), and $d(x, y) = 0$ doe not imply that $x$ and $y$ coincide i.e., it lets distinct points have distance zero from each other.
+**EPMet** lets distances be infinite ("*pseudo*"), and $d(x, y) = 0$ doe not imply that $x$ and $y$ coincide i.e., it lets distinct points have distance zero from each other. A metric space is an **EPMet** space for which $d(x, y) = 0$ implies $x = y$,
+and all distances $d(x, y)$ are finite.
 
 ### Fuzzy simplicial set
 A Set is any well defined collection of objects and has a binary value for membership. Fuzziness occurs when the boundary of a piece of information is not clear-cut. Fuzzy set theory is an extension of classical set theory where elements have degree of membership. A fuzzy simplicial set is a simplicial set in which every simplex has a strength. A simplex has strength at most the minimum of its faces. All degeneracies of a simplex have the same strength as the simplex. The category of fuzzy simplicial sets is denoted **sFuzz**.
