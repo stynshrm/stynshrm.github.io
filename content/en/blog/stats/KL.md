@@ -92,7 +92,8 @@ $$
 D_{KL}[P || Q] = H[P,Q] - H[P]
 $$ 
 
-In supervised classification problems, lets say there are $K$ classes. With $y_i$ as the ground truth and $\hat{y}_i$ be the predicted class probabilties. The cross-entropy is
+In supervised classification problems, lets say there are $K$ classes. With $y_{i}$ as the ground truth 
+and hat $\hat{y_i}$ be the predicted class probabilties . The cross-entropy is 
 $$
-H[y_i,\hat{y}_i] = - \sum_{i=1}^{K}y_ilog\hat{y}_i
+H[y_{i},\hat{y_i}] = - \sum_{i=1}^{K} y_i log\hat{y_i}
 $$
