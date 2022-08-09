@@ -4,6 +4,7 @@ title: Bayesian Inference - A Primer
 date: 2021-07-14
 math: true
 tags: ["Statistcs"]
+draft: true
 ---
 
 <!---

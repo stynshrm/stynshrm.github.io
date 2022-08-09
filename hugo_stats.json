@@ -178,14 +178,13 @@
     "ids": [
       "a",
       "abseil-python-library",
-      "bayes-theorem",
-      "bayesian-inference",
       "case-1---known-source-unknown-paramters",
       "case-2---unknown-source-known-parameters",
       "case-3---unknown-source-unknown-parameters",
       "cover-and-its-nerve",
       "cross-entropy",
       "damped-harmonic-oscillator",
+      "evidence-lower-bound-elbo",
       "example-bivariate-normal-distribution",
       "examples",
       "expectation-maximization-em",
@@ -197,6 +196,7 @@
       "gibbs-sampling",
       "gmm-with-expectation-maximization",
       "hypothetical-example",
+      "intractable-posterior",
       "js-divergence",
       "kl-divergence---derivation-by-intution",
       "large-number-of-data-points",
@@ -227,9 +227,9 @@
       "two-sample-z-test",
       "uber-metric-space",
       "umap",
+      "variational-method",
       "what-is-the-t-test",
       "what-is-the-z-test",
-      "you-already-are-bayesian-in-everyday-reasoning",
       "čech-complex-and-the-vietoris-rips-complex---simplical-complexes-from-data"
     ]
   }
