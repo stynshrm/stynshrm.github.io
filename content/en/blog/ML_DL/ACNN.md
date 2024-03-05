@@ -62,36 +62,6 @@ The compnent free energies are obtained using ACNN:
 
 ```python
 import deepchem as dc
-```
-
-    Skipped loading some Pytorch utilities, missing a dependency. No module named 'torch'
-
-
-    This module requires PyTorch to be installed.
-
-
-    No normalization for SPS. Feature removed!
-    No normalization for AvgIpc. Feature removed!
-
-
-    Error: Unable to import pysam. Please make sure it is installed.
-    Error: Unable to import pysam. Please make sure it is installed.
-    Error: Unable to import pysam. Please make sure it is installed.
-    Error: Unable to import pysam. Please make sure it is installed.
-    WARNING:tensorflow:From /Users/sasha/anaconda3/envs/deepchem-test/lib/python3.10/site-packages/tensorflow/python/util/deprecation.py:588: calling function (from tensorflow.python.eager.polymorphic_function.polymorphic_function) with experimental_relax_shapes is deprecated and will be removed in a future version.
-    Instructions for updating:
-    experimental_relax_shapes is deprecated, use reduce_retracing instead
-
-
-    Skipped loading some PyTorch models, missing a dependency. No module named 'torch'
-    No module named 'torch'
-    Skipped loading modules with pytorch-geometric dependency, missing a dependency. No module named 'torch'
-    Skipped loading modules with pytorch-lightning dependency, missing a dependency. No module named 'torch'
-    Skipped loading some Jax models, missing a dependency. No module named 'jax'
-
-
-
-```python
 from deepchem.molnet import load_pdbbind
 from deepchem.models import AtomicConvModel
 from deepchem.feat import AtomicConvFeaturizer
