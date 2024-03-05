@@ -12,6 +12,9 @@ In traditional sequence-to-sequence models, such as those based on Recurrent Neu
 
 Bahdanau Attention addresses this issue by allowing the model to dynamically focus on different parts of the input sequence as it generates each output token. It does this by computing attention weights for each input token, indicating how much attention the model should pay to that token when generating the current output token.
 
+![png](/Slide38.png)
+source: https://blog.floydhub.com/attention-mechanism/
+
 The attention mechanism typically involves the following steps:
 
 1. Score Calculation: A score is calculated for each pair of input and output positions. This score indicates the relevance of the input position to the output position being generated.
@@ -973,8 +976,6 @@ evaluateRandomly(model, source, target, pairs)
 ```
 
 # Bahdanau Attention
-![png](/Slide38.png)
-source: https://blog.floydhub.com/attention-mechanism/
 
 
 ## Alignment Score
