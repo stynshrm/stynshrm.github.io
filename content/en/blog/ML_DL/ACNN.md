@@ -180,14 +180,7 @@ acm.fit(train, nb_epoch=max_epochs, max_checkpoints_to_keep=1,
     CPU times: user 46min 4s, sys: 16min 44s, total: 1h 2min 49s
     Wall time: 10min 39s
 
-
-
-
-
     0.36475067138671874
-
-
-
 
 ```python
 f, ax = plt.subplots()
@@ -198,7 +191,7 @@ plt.legend(loc='upper right');
 
 
     
-![png](./acnn-05.png)
+![png](/acnn-05.png)
     
 
 
