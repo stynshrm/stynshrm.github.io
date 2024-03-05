@@ -1,4 +1,3 @@
-gp.md
 ---
 author: Satyan Sharma
 title: Implementing Bahdanau Attention in a RNN(seq2seq)
