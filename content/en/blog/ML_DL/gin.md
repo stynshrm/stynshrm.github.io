@@ -6,8 +6,6 @@ math: true
 tags: ["Machine Learning"]
 ---
 
-#  Graph Isomorphism Network 
-
 Graph neural networks (GNN) rely on graph operations that include neural network training for various graph related tasks.  GNNs only learn node embeddings. To predict the properties of the entire molecules as graph, it is important to learn an entire graph embedding. GIN was designed to maximize the representational (or discriminative) power of a GNN. Graph Isomorphism Network (GIN) designed by Xu et al., 2018a, which was recently proposed to implement Weisfeiler-Lehman (WL) graph isomorphism test, a classical algorithm used to test if two graphs are isomorphic.
 
 
