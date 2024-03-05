@@ -1,7 +1,7 @@
 ---
 author: Satyan Sharma
 title: Implementing Bahdanau Attention in a RNN(seq2seq)
-date: 2023-09-20
+date: 2023-06-20
 math: true
 tags: ["Machine Learning"]
 ---
