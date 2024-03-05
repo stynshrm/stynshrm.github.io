@@ -7,6 +7,21 @@ math: true
 tags: ["Machine Learning"]
 ---
 
+**Bahdanau Attention** is a mechanism used in sequence-to-sequence models, particularly in neural machine translation tasks, to help the model focus on relevant parts of the input sequence when generating each part of the output sequence. It was introduced by Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio in their paper "Neural Machine Translation by Jointly Learning to Align and Translate" in 2014.
+
+In traditional sequence-to-sequence models, such as those based on Recurrent Neural Networks (RNNs) or Long Short-Term Memory (LSTM) networks, a fixed-length context vector is used to summarize the entire input sequence. However, this fixed-length representation may not capture all the relevant information, especially in longer sequences.
+
+Bahdanau Attention addresses this issue by allowing the model to dynamically focus on different parts of the input sequence as it generates each output token. It does this by computing attention weights for each input token, indicating how much attention the model should pay to that token when generating the current output token.
+
+The attention mechanism typically involves the following steps:
+
+1. Score Calculation: A score is calculated for each pair of input and output positions. This score indicates the relevance of the input position to the output position being generated.
+Softmax: The scores are passed through a softmax function to obtain attention weights, ensuring that the weights sum up to 1 and represent a probability distribution over the input positions.
+2. Weighted Sum: The input sequence is then weighted by these attention weights, and the weighted sum is computed. This gives a context vector, which captures the relevant information from the input sequence for generating the current output token.
+3. Context Vector: The context vector is concatenated with the output of the previous decoder timestep (or otherwise combined with it) and passed through the decoder network to generate the next output token.
+4. Bahdanau Attention allows the model to focus on different parts of the input sequence based on the context of the current decoding step. This attention mechanism has been widely adopted in various sequence-to-sequence tasks, improving the performance of neural machine translation models and other related tasks.
+
+
 ```python
 !pip3 install Cython
 ```
