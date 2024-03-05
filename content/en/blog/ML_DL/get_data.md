@@ -3,7 +3,7 @@ author: Satyan Sharma
 title: Hands on with ChEMBL API
 date: 2023-11-22
 math: true
-tags: ["Machine Learning"]
+tags: ["Cheminformatics"]
 ---
 
 ChEMBL is a large-scale bioactivity database that collects information on the interactions between small molecules (such as drugs, compounds, or substances) and their biological targets. It stands for "Chemical Biology Database" and is maintained by the European Molecular Biology Laboratory (EMBL).
