@@ -59,7 +59,7 @@ nx.draw(G)
 
 
     
-![png](\NetworkX_5_0.png)
+![png](/NetworkX_5_0.png)
     
 
 
@@ -182,7 +182,7 @@ nx.draw(G)
 
 
     
-![png](\NetworkX_17_1.png)
+![png](/NetworkX_17_1.png)
     
 
 
@@ -327,7 +327,7 @@ nx.draw(G)
 
 
     
-![png](\NetworkX_30_0.png)
+![png](/NetworkX_30_0.png)
     
 
 
@@ -357,7 +357,7 @@ nx.draw(G)
 
 
     
-![png](\NetworkX_31_1.png)
+![png](/NetworkX_31_1.png)
     
 
 
@@ -393,7 +393,7 @@ print(G.nodes)
 
 
     
-![png](\NetworkX_34_1.png)
+![png](/NetworkX_34_1.png)
     
 
 
@@ -971,7 +971,7 @@ nx.draw(networkX_graph)
 
 
     
-![png](\NetworkX_54_0.png)
+![png](/NetworkX_54_0.png)
     
 
 
@@ -1137,7 +1137,7 @@ visualize_graph(karate_undirected_graph, color=data.y)
 
 
     
-![png](\NetworkX_64_0.png)
+![png](/NetworkX_64_0.png)
     
 
 
@@ -1150,7 +1150,7 @@ nx.draw(karate_undirected_graph, cmap=plt.get_cmap('viridis'), with_labels=True,
 
 
     
-![png](\NetworkX_65_0.png)
+![png](/NetworkX_65_0.png)
     
 
 
