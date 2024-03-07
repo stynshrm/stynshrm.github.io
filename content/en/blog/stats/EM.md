@@ -4,6 +4,7 @@ title: Expectation Maximization and Gaussian Mixture Models
 date: 2022-05-28
 math: true
 tags: ["Statistcs", "Data Science"]
+thumbnail: /th/th_EM.png
 ---
 
 ## Expectation Maximization (EM)
