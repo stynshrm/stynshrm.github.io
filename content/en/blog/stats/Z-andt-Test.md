@@ -4,6 +4,7 @@ title: Z-test and t-test
 date: 2021-07-14
 math: true
 tags: ["Statistcs"]
+thumbnail: /th/ztest.png
 ---
 
 ## What is the Z Test?
