@@ -39,13 +39,19 @@ In a GNN, in the kth iteration we have:
 ![png](/agg.png)
 
 In a GIN, we still have the same steps, with $AGGREGATE$ is a $\sum$, and add tiny bit variation to current node and the push it through a non linear function, MLP, could be multiple layers.
+
 $$
  h_{v}^{k} = MLP^{k}\left ( \left ( 1+\epsilon^k \right )\cdot h_v^{(k-1)}+ \sum_{u\in N(v)}h_u^{(k-1)} \right )
-\\
-  h_G = CONCAT\left ( READOUT \left ( \left \{ h_{v}^{k} \mid v \in G \right \} \right )\mid k = 0,1, \cdots ,k\right )
-  $$
+$$
+
+
+$$
+h_G = CONCAT \left ( READOUT \left ( { h_{v}^{k} | v \in G } \right ) \mid k = 0,1, \cdots ,k \right ) 
+$$
+
+
 Then $READOUT$ operation is done for every layer and concatenate to represent the entire graph.
-Dicriminative and representational power of the Weisfeiler-Lehman test.
+
 
 
 
