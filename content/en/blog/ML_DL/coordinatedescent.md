@@ -4,6 +4,7 @@ title: Coordinate Descent from Scratch
 date: 2022-06-01
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_coordesc.png
 ---
 
 ### Some notations:
