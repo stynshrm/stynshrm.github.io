@@ -4,6 +4,7 @@ title: Peptide Embedding for Unsupervised clustering
 date: 2023-12-28
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_pep.png
 ---
 How the peptides were encoded in an interesting paper titled: **Unsupervised machine learning leads to an abiotic picomolar peptide ligand**. 
 
