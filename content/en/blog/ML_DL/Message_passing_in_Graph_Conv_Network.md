@@ -1,9 +1,10 @@
 ---
 author: Satyan Sharma
 title: Message Passing in Graph Conv Network
-date: 2023-09-20
+date: 2023-05-20
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_mpass.png
 ---
 
 **Message Passing**
