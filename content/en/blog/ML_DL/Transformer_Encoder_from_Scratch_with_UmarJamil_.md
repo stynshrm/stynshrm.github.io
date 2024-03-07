@@ -1,11 +1,13 @@
 ---
 author: Satyan Sharma
-title: Transformer Encoder from Scratch (with UmarJamil)
+title: Transformer Encoder from Scratch
 date: 2023-12-20
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_trans.png
 ---
 
+## Transformer Encoder from Scratch (with UmarJamil)
 In a Transformer architecture, the encoder block is responsible for processing the input sequence. It consists of several layers, typically composed of self-attention mechanisms and feed-forward neural networks.
 
 ![png](/enc02.png)
