@@ -1,6 +1,6 @@
 ---
 author: Satyan Sharma
-title: GRU Regression for Molcular Property Prediction
+title: GRU Regression for Molecular Property Prediction
 date: 2023-08-20
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
