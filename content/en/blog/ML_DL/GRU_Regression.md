@@ -1,9 +1,10 @@
 ---
 author: Satyan Sharma
 title: GRU Regression for Molcular Property Prediction
-date: 2023-09-20
+date: 2023-08-20
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_gru.png
 ---
 
 # Gated Recurrent Units (GRU)
