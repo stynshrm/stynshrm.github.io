@@ -4,6 +4,7 @@ title: "Inline Math with KaTeX and Hugo"
 date: 2021-07-13
 math: true
 tags: ["Katex", "hugo"]
+thumbnail: /th/th_math.png
 ---
 
 While writing math in this blog I realized that inline math does not render. 
