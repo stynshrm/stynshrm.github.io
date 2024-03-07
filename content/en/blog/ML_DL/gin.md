@@ -50,7 +50,12 @@ h_G = CONCAT \left ( READOUT \left ( { h_{v}^{k} | v \in G } \right ) \mid k = 0
 $$
 
 
-Then $READOUT$ operation is done for every layer and concatenate to represent the entire graph.
+Then $READOUT$ operation is done for every layer and concatenate to represent the entire graph. It turns out that the discriminative and representational power of GIN is equal to the power of the
+Weisfeiler-Lehman test.
+The WL test iteratively 
+(1) aggregates the labels of nodes and their neighborhoods, and 
+(2) hashes the aggregated labels into unique new labels. The algorithm decides that two graphs are non-isomorphic if at some iteration the labels of the nodes between the two
+graphs differ.
 
 
 
