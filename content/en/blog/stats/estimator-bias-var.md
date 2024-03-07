@@ -4,6 +4,7 @@ title: Estimator, Bias & Variance
 date: 2021-08-15
 math: true
 tags: ["Statistcs", "Data Science"]
+thumbnail: /th/th_var.png
 ---
 **Parameter** Characteristic/property calculated in population. Eg., mean ($\mu$), variance ($s^2$)
 
