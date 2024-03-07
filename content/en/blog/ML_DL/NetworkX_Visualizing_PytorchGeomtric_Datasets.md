@@ -4,6 +4,7 @@ title: NetworkX - Visualizing PytorchGeomtric Datasets
 date: 2022-06-06
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_net.png
 ---
 
 ```python
