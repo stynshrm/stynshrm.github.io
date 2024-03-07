@@ -1,9 +1,10 @@
 ---
 author: Satyan Sharma
 title: Attribuiton - GNN expalanation
-date: 2023-10-25
+date: 2023-09-22
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_attr.png
 ---
 
 Attribution in the context of GNNs refers to understanding the importance or relevance of different nodes, edges, or subgraphs in the input graph concerning the output of the network. It aims to answer questions such as: "Why did the model make this prediction?" or "Which parts of the graph contributed the most to the final decision?" Understanding attribution is crucial for interpreting the behavior of GNNs, debugging models, and gaining insights into the underlying data.
