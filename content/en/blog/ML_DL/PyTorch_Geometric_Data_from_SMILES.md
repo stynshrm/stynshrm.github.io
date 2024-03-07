@@ -4,6 +4,7 @@ title: Building PyTorch Geometric Data from SMILES
 date: 2023-09-20
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_pg.png
 ---
 
 
