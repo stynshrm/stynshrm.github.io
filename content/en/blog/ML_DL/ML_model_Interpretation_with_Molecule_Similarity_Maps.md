@@ -4,6 +4,7 @@ title: ML model Interpretation with Molecule Similarity Maps
 date: 2022-09-20
 math: true
 tags: ["Cheminformatics"]
+thumbnail: /th/th_molsim.png
 ---
 
 RDKit's similarity map functionality (https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-5-43).
