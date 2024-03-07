@@ -1,9 +1,10 @@
 ---
 author: Satyan Sharma
 title: ELBO - Evidence Lower Bound 
-date: 2022-06-06
+date: 2023-02-06
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_elbo.png
 ---
 
 <!--- 
