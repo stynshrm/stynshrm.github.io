@@ -4,6 +4,7 @@ title: Abseil flags
 date: 2022-05-31
 math: true
 tags: ["Python"]
+thumbnail: /th/th-abseil.png
 ---
 
 ## Abseil Python Library
