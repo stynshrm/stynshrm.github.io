@@ -1,6 +1,6 @@
 ---
 author: Satyan Sharma
-title: NetworkX - Visualizing PytorchGeomtric Datasets
+title: NetworkX - Visualizing PytorchGeometric Datasets
 date: 2022-06-06
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
