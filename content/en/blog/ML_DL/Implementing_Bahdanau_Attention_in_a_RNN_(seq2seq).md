@@ -4,6 +4,7 @@ title: Implementing Bahdanau Attention in a RNN(seq2seq)
 date: 2023-06-20
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_ba.png
 ---
 
 **Bahdanau Attention** is a mechanism used in sequence-to-sequence models, particularly in neural machine translation tasks, to help the model focus on relevant parts of the input sequence when generating each part of the output sequence. It was introduced by Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio in their paper "Neural Machine Translation by Jointly Learning to Align and Translate" in 2014.
