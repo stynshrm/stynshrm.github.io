@@ -4,6 +4,7 @@ title: Morgan fingerprint and Tanimoto similarity
 date: 2022-09-20
 math: true
 tags: ["Cheminformatics"]
+thumbnail: /th/th_morgan.png
 ---
 
 ## Morgan Fingerprint
