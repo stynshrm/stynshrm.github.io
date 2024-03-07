@@ -3,7 +3,6 @@ author: Satyan Sharma
 title: Model Selection - AIC and BIC
 date: 2022-06-10
 math: true
-draft: true
 tags: ["Statistcs", "Data Science"]
 ---
 
