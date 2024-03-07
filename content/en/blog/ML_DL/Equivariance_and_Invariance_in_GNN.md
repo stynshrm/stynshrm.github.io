@@ -1,9 +1,10 @@
 ---
 author: Satyan Sharma
 title: Equivariance and Invariance in GNNs
-date: 2023-09-20
+date: 2023-07-20
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_equiv.png
 ---
 
 Equivariance and invariance are fundamental concepts in the context of symmetries and transformations in Euclidean space.
