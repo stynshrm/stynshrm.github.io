@@ -4,6 +4,7 @@ title: Parametric vs Nonparametric
 date: 2021-07-14
 math: true
 tags: ["Statistcs", "Data Science"]
+thumbnail: /th/th_para.png
 ---
 ## Parametric Methods:
 
