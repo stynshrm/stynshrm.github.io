@@ -4,6 +4,7 @@ title: UMAP - Uniform Manifold Approximation and Projection
 date: 2022-06-07
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/umap_cover.png
 ---
 
 ## Simplex and Simplical Complexes
