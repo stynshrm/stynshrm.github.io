@@ -4,6 +4,7 @@ title: PINNS - Physics in Neural Networks
 date: 2022-06-06
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_pinn.png
 ---
 
 ## Neural Networks are Function Approximators
