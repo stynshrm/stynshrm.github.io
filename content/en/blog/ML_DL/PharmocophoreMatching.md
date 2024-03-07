@@ -4,6 +4,7 @@ title: Pharmocophore Matching
 date: 2023-09-20
 math: true
 tags: ["Cheminformatics"]
+thumbnail: /th/th_p4.png
 ---
 
 A pharmacophore is a hypothetical description of the molecular features necessary for a 
