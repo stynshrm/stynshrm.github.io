@@ -4,6 +4,7 @@ title: Solubility Prediction using GNN
 date: 2023-11-20
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_sol.png
 ---
 
  We will use ESOL dataset and train GNN model to predict solubility directly from chemical structures
