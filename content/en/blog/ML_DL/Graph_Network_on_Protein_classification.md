@@ -4,6 +4,7 @@ title: Graph Based Classification on Protein Dataset
 date: 2023-10-20
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_gbc.png
 ---
 
 ```python
