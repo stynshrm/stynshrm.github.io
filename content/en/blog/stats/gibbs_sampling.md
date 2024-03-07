@@ -4,6 +4,7 @@ title: Gibbs Sampling
 date: 2022-05-24
 math: true
 tags: ["Statistcs", "Data Science"]
+thumbnail: /th/th_gibs.png
 ---
 
 ## Gibbs Sampling
