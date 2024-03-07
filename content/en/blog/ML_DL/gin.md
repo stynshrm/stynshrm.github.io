@@ -46,7 +46,7 @@ $$
 
 
 $$
-h_G = CONCAT \left ( READOUT \left ( { h_{v}^{k} | v \in G } \right ) \mid k = 0,1, \cdots ,k \right ) 
+h_G = CONCAT \left ( READOUT \left (  \left\\{ h_{v}^{k} | v \in G  \right\\} \right ) \mid k = 0,1, \cdots ,k \right ) 
 $$
 
 
