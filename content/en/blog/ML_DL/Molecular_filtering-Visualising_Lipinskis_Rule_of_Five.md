@@ -4,6 +4,7 @@ title: Molecular filtering - Visualising Lipinskis Rule of Five
 date: 2022-09-20
 math: true
 tags: ["Cheminformatics"]
+thumbnail: /th/th_5.png
 ---
 
  Here we filter candidate drug molecules by Lipinsik’s rule of five to keep only orally bioavailable compounds.
