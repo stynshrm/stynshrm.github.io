@@ -4,6 +4,7 @@ title: KL Divergence and Cross Entropy
 date: 2022-06-01
 math: true
 tags: ["Statistcs", "Data Science"]
+thumbnail: /th/th_KL.png
 ---
 ## KL Divergence - Derivation by Intution
 
