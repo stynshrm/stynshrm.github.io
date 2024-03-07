@@ -1,9 +1,10 @@
 ---
 author: Satyan Sharma
 title: Atomic Convolutional Networks for predicting binding affinity
-date: 2023-12-29
+date: 2023-09-29
 math: true
 tags: ["Machine Learning", "Cheminformatics"]
+thumbnail: /th/th_acnn.png
 ---
 
 ## Atomic Convolutional Networks (ACNNs)
