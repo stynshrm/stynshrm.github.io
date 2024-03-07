@@ -4,6 +4,7 @@ title: Gaussian Process
 date: 2022-09-20
 math: true
 tags: ["Machine Learning"]
+thumbnail: /th/th_gaup.png
 ---
 
 Like a Gaussian distribution is a distribution over vectors, A GP is a Gaussian
