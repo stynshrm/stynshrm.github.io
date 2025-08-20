@@ -195,7 +195,21 @@ async function processUser(userId: string) {
 }
 ```
 
-## 🎯 **In Simple Terms**
+## 🎯 Also important **`async`** functions ALWAYS return Promises, even if you use **`await`** inside them.
+
+```typescript
+// Even though we use await inside, the function still returns a Promise
+async function myFunction() {
+  const result = await someAsyncOperation();
+  return result; // This returns Promise<result>, not result
+}
+
+// When you call it:
+const promise = myFunction(); // Promise
+const value = await myFunction(); // Actual value
+```
+
+**In Simple Terms**
 
 - **`async`** = "This function does slow things"
 - **`await`** = "Wait for this slow thing to finish"
