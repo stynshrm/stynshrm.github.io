@@ -9,12 +9,12 @@ tags: ["WebDev"]
 
 The `async` and `await` are fundamental concepts in modern JavaScript/TypeScript. Let me explain when and why to use them.
 
-## �� **What Are `async` and `await`?**
+## **What Are `async` and `await`?**
 
 ### **`async`** = "This function will do something that takes time"
 ### **`await`** = "Wait for this slow operation to finish before continuing"
 
-## �� **When to Use Them**
+## **When to Use Them**
 
 ### **1. Database Operations (Always Async)**
 ```typescript
@@ -52,9 +52,9 @@ const hashedPassword = bcrypt.hash(password, 12); // Returns Promise
 const hashedPassword = await bcrypt.hash(password, 12); // Gets actual hash
 ```
 
-## 🎯 **Real Examples from Our Code**
+## 🎯 **Real Examples from a user-authentication project**
 
-### **In Our User Model:**
+### **In User Model:**
 ```typescript
 // ✅ Pre-save middleware - async because bcrypt is slow
 userSchema.pre('save', async function(next) {
@@ -82,7 +82,7 @@ userSchema.methods.comparePassword = async function(candidatePassword: string): 
 };
 ```
 
-### **In Our Test Function:**
+### **In the Test Function:**
 ```typescript
 // ✅ Test function - async because database operations are slow
 export const testUserModel = async () => {
