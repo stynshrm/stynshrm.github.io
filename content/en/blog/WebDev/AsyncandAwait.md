@@ -1,3 +1,12 @@
+---
+author: Satyan Sharma
+title: Async & Await in JavaScript and TypeScript
+date: 2025-07-29
+math: true
+tags: ["WebDev"]
+---
+
+
 The `async` and `await` are fundamental concepts in modern JavaScript/TypeScript. Let me explain when and why to use them.
 
 ## �� **What Are `async` and `await`?**
