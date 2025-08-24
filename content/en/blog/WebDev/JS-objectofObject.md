@@ -1,6 +1,6 @@
 ---
 author: Satyan Sharma
-title: JavaScript Quirk: Why Your Object Keys Are Colliding and Becoming "[object Object]"
+title: JavaScript Quirk: Why Your Object Keys Are Colliding and Becoming object Object"
 date: 2025-07-30
 math: true
 tags: ["WebDev"]
