@@ -1,222 +1,129 @@
 ---
 author: Satyan Sharma
-title: Async & Await in JavaScript and TypeScript
+title: Understanding JavaScript Async: Callbacks, Promises, and Async/Await
 date: 2025-07-29
 math: true
 tags: ["WebDev"]
 ---
+Absolutely! Here’s a well-structured blog post based on our discussion, including a short comparison table for clarity:
 
+---
 
-The `async` and `await` are fundamental concepts in modern JavaScript/TypeScript. Let me explain when and why to use them.
+# Understanding JavaScript Async: Callbacks, Promises, and Async/Await
 
-## **What Are `async` and `await`?**
+JavaScript is single-threaded, but it’s designed to handle asynchronous operations efficiently. In this post, we’ll explore how callbacks, Promises, and `async/await` work, using a simple example of fetching a joke from an API.
 
-### **`async`** = "This function will do something that takes time"
-### **`await`** = "Wait for this slow operation to finish before continuing"
+---
 
-## **When to Use Them**
+## 1. Callbacks
 
-### **1. Database Operations (Always Async)**
-```typescript
-// ❌ Wrong - Database operations are always async
-const user = User.findById(id); // This returns a Promise, not the user!
+A **callback** is a function passed into another function to be executed later.
 
-// ✅ Correct - Use await to get the actual result
-const user = await User.findById(id); // Now you get the actual user
+```javascript
+function getJokeWithCallback() {
+  fetch("https://official-joke-api.appspot.com/random_joke")
+    .then(function handleResponse(response) {
+      return response.json();
+    })
+    .then(function handleData(data) {
+      console.log(`${data.setup} - ${data.punchline}`);
+    })
+    .catch(function handleError(error) {
+      console.error("Error:", error);
+    });
+}
+
+getJokeWithCallback();
 ```
 
-### **2. File Operations**
-```typescript
-// ❌ Wrong
-const data = fs.readFile('file.txt'); // Returns Promise
+**Key Points:**
 
-// ✅ Correct
-const data = await fs.readFile('file.txt'); // Gets actual file content
-```
+* Each `.then()` and `.catch()` receives a **callback function**.
+* The argument of the callback (like `data` or `error`) is provided by the Promise.
+* The callbacks are not executed immediately—they’re called **later**, when the Promise resolves or rejects.
 
-### **3. API Calls**
-```typescript
-// ❌ Wrong
-const response = fetch('https://api.example.com/data'); // Returns Promise
+---
 
-// ✅ Correct
-const response = await fetch('https://api.example.com/data'); // Gets actual response
-```
+## 2. Promises
 
-### **4. Password Hashing**
-```typescript
-// ❌ Wrong
-const hashedPassword = bcrypt.hash(password, 12); // Returns Promise
+A **Promise** is an object representing a value that may not be available yet but will be resolved in the future.
 
-// ✅ Correct
-const hashedPassword = await bcrypt.hash(password, 12); // Gets actual hash
-```
+* `fetch()` returns a Promise.
+* `.json()` also returns a Promise because parsing can take time.
 
-## 🎯 **Real Examples from a user-authentication project**
+**Analogy:** Think of each `.then()` as a student in a classroom passing along the result once it arrives.
 
-### **In User Model:**
-```typescript
-// ✅ Pre-save middleware - async because bcrypt is slow
-userSchema.pre('save', async function(next) {
-  if (!this.isModified('password')) {
-    return next();
-  }
-  
+---
+
+## 3. Async/Await
+
+`async/await` is syntactic sugar over Promises that makes asynchronous code look synchronous.
+
+```javascript
+async function getJokeWithAsync() {
   try {
-    // bcrypt operations are async
-    const salt = await bcrypt.genSalt(12);
-    this.password = await bcrypt.hash(this.password, salt);
-    next();
+    const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+    const data = await response.json();
+    console.log(`${data.setup} - ${data.punchline}`);
   } catch (error) {
-    next(error as Error);
-  }
-});
-
-// ✅ Password comparison - async because bcrypt is slow
-userSchema.methods.comparePassword = async function(candidatePassword: string): Promise<boolean> {
-  try {
-    return await bcrypt.compare(candidatePassword, this.password);
-  } catch (error) {
-    return false;
-  }
-};
-```
-
-### **In the Test Function:**
-```typescript
-// ✅ Test function - async because database operations are slow
-export const testUserModel = async () => {
-  try {
-    // Database operations are async
-    const testUser = new User({...});
-    await testUser.save(); // Wait for save to complete
-    
-    const savedUser = await User.findById(testUser._id); // Wait for find to complete
-    await User.findByIdAndDelete(testUser._id); // Wait for delete to complete
-    
-    return true;
-  } catch (error) {
-    return false;
-  }
-};
-```
-
-## 🎯 **When NOT to Use `async`/`await`**
-
-### **1. Simple Calculations (Synchronous)**
-```typescript
-// ✅ No async needed - simple math
-function add(a: number, b: number): number {
-  return a + b;
-}
-
-// ✅ No async needed - string manipulation
-function getFullName(firstName: string, lastName: string): string {
-  return `${firstName} ${lastName}`;
-}
-```
-
-### **2. Virtual Fields (Synchronous)**
-```typescript
-// ✅ No async needed - just combining strings
-userSchema.virtual('fullName').get(function() {
-  return `${this.firstName} ${this.lastName}`;
-});
-```
-
-### **3. Token Generation (Synchronous)**
-```typescript
-// ✅ No async needed - just creating random strings
-userSchema.methods.generateEmailVerificationToken = function(): string {
-  const verificationToken = crypto.randomBytes(32).toString('hex');
-  this.emailVerificationToken = verificationToken;
-  this.emailVerificationExpires = new Date(Date.now() + 24 * 60 * 60 * 1000);
-  return verificationToken;
-};
-```
-
-## 🎯 **The Rule of Thumb**
-
-### **Use `async`/`await` when:**
-- ✅ **Database operations** (find, save, update, delete)
-- ✅ **File operations** (read, write)
-- ✅ **API calls** (fetch, axios)
-- ✅ **Password hashing** (bcrypt)
-- ✅ **Email sending** (nodemailer)
-- ✅ **Any operation that takes time**
-
-### **Don't use `async`/`await` when:**
-- ❌ **Simple calculations** (math, string manipulation)
-- ❌ **Creating objects** (new User())
-- ❌ **Setting properties** (user.firstName = "John")
-- ❌ **Returning values** (return true)
-
-## 🎯 **Common Patterns**
-
-### **1. Try-Catch with Async**
-```typescript
-async function someFunction() {
-  try {
-    const result = await someAsyncOperation();
-    return result;
-  } catch (error) {
-    console.error('Error:', error);
-    throw error;
+    console.error("Error:", error);
   }
 }
+
+getJokeWithAsync();
 ```
 
-### **2. Multiple Async Operations**
-```typescript
-// ❌ Wrong - Sequential (slow)
-const user1 = await User.findById(id1);
-const user2 = await User.findById(id2);
-const user3 = await User.findById(id3);
+**Key Points:**
 
-// ✅ Correct - Parallel (fast)
-const [user1, user2, user3] = await Promise.all([
-  User.findById(id1),
-  User.findById(id2),
-  User.findById(id3)
-]);
+* `await` pauses the async function until the Promise resolves.
+* Both `fetch()` and `response.json()` are asynchronous; they may take time.
+* Using `async/await` improves readability compared to nested `.then()` chains.
+
+---
+
+## 4. Named Functions vs Inline Arrow Functions
+
+You can define callbacks outside the main function for clarity:
+
+```javascript
+function handleResponse(response) { return response.json(); }
+function handleData(data) { console.log(data.setup + " - " + data.punchline); }
+function handleError(error) { console.error(error); }
+
+fetch("https://official-joke-api.appspot.com/random_joke")
+  .then(handleResponse)
+  .then(handleData)
+  .catch(handleError);
 ```
 
-### **3. Conditional Async**
-```typescript
-async function processUser(userId: string) {
-  const user = await User.findById(userId);
-  
-  if (user.isEmailVerified) {
-    // Only do async operation if needed
-    await sendWelcomeEmail(user.email);
-  }
-  
-  return user;
-}
-```
+* Arrow functions and named functions are **both valid callbacks**.
+* Using named functions can make debugging and code organization easier.
 
-## 🎯 Also important **`async`** functions ALWAYS return Promises, even if you use **`await`** inside them.
+---
 
-```typescript
-// Even though we use await inside, the function still returns a Promise
-async function myFunction() {
-  const result = await someAsyncOperation();
-  return result; // This returns Promise<result>, not result
-}
+## 5. Functions Returning Promises
 
-// When you call it:
-const promise = myFunction(); // Promise
-const value = await myFunction(); // Actual value
-```
+Some functions **always return a Promise**, either because they are asynchronous or marked `async`.
 
-**In Simple Terms**
+| Function Type           | Example                                                                          | Returns Promise? |
+| ----------------------- | -------------------------------------------------------------------------------- | ---------------- |
+| Normal function         | `function add(a, b) { return a + b; }`                                           | No               |
+| Async function          | `async function getData() { return 42; }`                                        | Yes              |
+| Built-in async function | `fetch("url")`                                                                   | Yes              |
+| Promise wrapper         | `function delay(ms) { return new Promise(resolve => setTimeout(resolve, ms)); }` | Yes              |
 
-- **`async`** = "This function does slow things"
-- **`await`** = "Wait for this slow thing to finish"
-- **Use them for**: Database, files, APIs, hashing, emails
-- **Don't use them for**: Math, strings, simple operations
+**Key Rule:** Any `async` function **automatically returns a Promise**, and any value returned inside it is wrapped in that Promise.
 
-Think of it like:
-- **Without await**: "Go get me a coffee" (you get a promise to get coffee)
-- **With await**: "Wait here while I get you a coffee" (you get the actual coffee)
+---
 
+## 6. Summary
+
+* **Callbacks:** Functions passed into other functions, executed later.
+* **Promises:** Objects representing future values; chainable with `.then()` and `.catch()`.
+* **Async/Await:** Cleaner syntax for sequential async operations, still uses Promises under the hood.
+* **Functions returning Promises:** Include `fetch()`, `.json()`, async functions, and custom Promise wrappers.
+
+Understanding this flow helps avoid “callback hell” and makes it easier to reason about asynchronous JavaScript.
+
+
+Do you want me to add that diagram too?
