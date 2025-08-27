@@ -1,6 +1,6 @@
 ---
 author: Satyan Sharma
-title: Understanding JavaScript Async: Callbacks, Promises, and Async/Await
+title: Understanding JavaScript Async- Callbacks, Promises, and Async/Await
 date: 2025-07-29
 math: true
 tags: ["WebDev"]
