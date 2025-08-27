@@ -48,7 +48,10 @@ A **Promise** is an object representing a value that may not be available yet bu
 * `fetch()` returns a Promise.
 * `.json()` also returns a Promise because parsing can take time.
 
-**Analogy:** Think of each `.then()` as a student in a classroom passing along the result once it arrives.
+**Key idea:**
+
+* A Promise-returning function is any function where the result may not be immediately available.
+* You can use .then() or await it (_see below_) to get the result once it’s ready.
 
 ---
 
