@@ -55,7 +55,7 @@ DefaultContentLanguageInSubdir = true
   title = "Follow me"
   description = "I work on everything - molecular simulations, data science and coding"
   linkedin = "https://linkedin.com/in/"
-  github = "https://github.com/"
+  github = "https://github.com/stynxshrm-ui"
 
 
 [[menu.main]]
