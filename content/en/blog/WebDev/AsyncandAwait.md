@@ -4,6 +4,7 @@ title: Understanding JavaScript Async- Callbacks, Promises, and Async/Await
 date: 2025-07-29
 math: true
 tags: ["WebDev"]
+thumbnail: /js_logo.png
 ---
 
 JavaScript is single-threaded, but it’s designed to handle asynchronous operations efficiently. In this post, we’ll explore how callbacks, Promises, and `async/await` work, using a simple example of fetching a joke from an API.
