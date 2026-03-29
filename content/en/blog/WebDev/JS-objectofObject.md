@@ -4,6 +4,7 @@ title: JavaScript Quirk - Why Your Object Keys Are Colliding and Becoming object
 date: 2025-07-30
 math: true
 tags: ["WebDev"]
+thumbnail: /js_logo.png
 ---
 
 Have you ever tried to use an object as a key in another JavaScript object, only to find that your values are mysteriously overwritten? You're not alone. This is a common stumbling block for developers, and it all revolves around a seemingly magical string: `"[object Object]"`.
