@@ -4,7 +4,7 @@ title: Reranking and RAG
 date: 2026-02-20
 math: true
 tags: ["LLms"]
-thumbnail: /llm.png
+thumbnail: /llm1.png
 ---
 # Understanding RAG and Reranking in Modern AI Systems
 
