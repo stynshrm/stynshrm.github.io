@@ -7,6 +7,7 @@ math: true
 tags: ["Machine Learning"]
 thumbnail: /th/th_reco.png
 ---
+## Understanding RAG and Reranking in Modern AI Systems
 
 A recommender system is a type of information filtering system that predicts a user's preferences for items (such as movies, books, music, products, etc.) and suggests relevant items to the user. These systems are widely used in e-commerce platforms, streaming services, social media platforms, and many other applications where personalized recommendations can enhance user experience and engagement.
 
